@@ -20,11 +20,12 @@ int main()
 	int mult1 = 12;
 	int mult2 = 10;
 
+	//invoke the funciotns we declared
 	printHello();
 	printNumber(100);
 	square(sqr);
-
 	int someData = giveMe10();
+	/******************************************************************/
 	cout << someData << endl;
 	int totalValue = addThese(num1, num2);
 	cout << totalValue << endl;
@@ -37,6 +38,7 @@ int main()
 	return 0;
 }
 
+//functiion definitions
 int multiplyThese(int mult1, int mult2)
 {
 	int product = mult1 * mult2;
