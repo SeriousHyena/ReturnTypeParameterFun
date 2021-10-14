@@ -2,18 +2,23 @@
 
 using namespace std;
 
-//declare functions
+//function declarations
 void printHello();			//returns nothing
 void printNumber(int a);	//returns nothing
 int square(int sqr);
 int giveMe10();
 int addThese(int num1, int num2);
+int multiplyThese(int mult1, int mult2);
+/************************************************************************************/
+
 
 int main()
 {
 	int num1 = 120;
 	int num2 = 580;
 	int sqr = 9;
+	int mult1 = 12;
+	int mult2 = 10;
 
 	printHello();
 	printNumber(100);
@@ -24,11 +29,18 @@ int main()
 	int totalValue = addThese(num1, num2);
 	cout << totalValue << endl;
 	cout <<"The square function returned: " <<sqr<< " squared " <<"which is: " << square(sqr) << endl;
+	cout << "mult1 times mult1= " << multiplyThese(mult1, mult2) << endl;
 
 	printNumber(addThese(num1, 50));
 
 
 	return 0;
+}
+
+int multiplyThese(int mult1, int mult2)
+{
+	int product = mult1 * mult2;
+	return product;
 }
 
 void printHello()
